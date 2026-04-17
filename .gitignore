@@ -1,0 +1,63 @@
+# Byte-compiled / cache
+__pycache__/
+*.py[cod]
+
+# Virtual environment
+.venv/
+
+# Python packaging
+dist/
+build/
+*.egg-info/
+
+# IDE/editor
+.vscode/
+*.sublime-project
+*.sublime-workspace
+
+# Data layers and generated pipeline outputs
+# Keep data layer directories tracked (use .gitkeep files), but ignore generated contents
+golgg/data/bronze/*
+golgg/data/silver/*
+golgg/data/gold/*
+!golgg/data/bronze/.gitkeep
+!golgg/data/silver/.gitkeep
+!golgg/data/gold/.gitkeep
+golgg/fullstats/
+golgg/torneios/
+golgg/player_raw_torneios/
+golgg/player_grades_torneios/
+golgg/infographic_ready/
+
+# Images and downloaded assets
+golgg/images/
+golgg/assets/*
+!golgg/assets/.gitkeep
+!golgg/assets/data_kraken_logo.png
+
+# Mapping CSVs and other generated CSVs
+golgg/images/*_mapping.csv
+**/player_images_mapping.csv
+**/team_logos_mapping.csv
+*.csv
+
+# Local HTML dumps, logs and large legacy artifacts
+legacy/root_scratch/*.html
+legacy/root_scratch/*.pdf
+legacy/root_scratch/*.zip
+legacy/root_scratch/*
+tcc/
+atividades/
+Template*.docx
+golgg/observability/step_timing_runs.jsonl
+
+# OS files
+.DS_Store
+Thumbs.db
+venv/
+curty.html
+example1.html
+example_aatrox_icon.html
+players.html
+square.html
+teams.html
